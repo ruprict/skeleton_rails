@@ -1,4 +1,4 @@
-require 'minitest/autorun'
+require 'test/unit'
 require 'rails'
 require 'rails/generators'
 

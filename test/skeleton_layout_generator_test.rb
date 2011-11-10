@@ -19,7 +19,11 @@ class SkeletonLayoutGeneratorTest < Rails::Generators::TestCase
       assert_file "public/images/apple-touch-icon-72x72.png"
       assert_file "public/images/apple-touch-icon.png"
       assert_file "public/favicon.ico"
+  end
 
+  def test_named_layout_is_created
+    run_generator %w{skeleton}
+    assert_file "app/views/layouts/skeleton.html.erb"
   end
   
 end

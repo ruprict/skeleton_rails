@@ -1,3 +1,5 @@
 *.swp
 *.swn
+*.swo
 *.gem
+.DS_Store

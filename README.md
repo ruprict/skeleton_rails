@@ -16,6 +16,7 @@ Then, to create the layout:
 `NAME` is optional and defaults to `application`. The generator will copy a layout file to the app/views/layouts directory, as well as copying the stylesheets, javascript, and image files to their respective locations.  Skeleton also includes a 404.html and a robots.txt file.
 
 # Future
+* Need to put in check for asset pipeline
 * I hope to add a haml option in the very near future.
 
 # Credit

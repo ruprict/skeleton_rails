@@ -10,7 +10,10 @@ class SkeletonLayoutGenerator < Rails::Generators::Base
     copy_file 'robots.txt', 'public/robots.txt'
     # Do these need to go in vendor/assets?
     directory 'stylesheets/', 'app/assets/stylesheets/'  
-    directory 'images/', 'public/images/'  
+    copy_file 'images/apple-touch-icon-114x114.png', 'public/images/apple-touch-icon-114x114.png'  
+    copy_file 'images/apple-touch-icon-72x72.png', 'public/images/apple-touch-icon-72x72.png'  
+    copy_file 'images/apple-touch-icon.png', 'public/images/apple-touch-icon.png'  
+    copy_file 'images/favicon.ico', 'public/favicon.ico'  
     copy_file 'javascripts/tabs.js', 'app/assets/javascripts/tabs.js'
   end
 

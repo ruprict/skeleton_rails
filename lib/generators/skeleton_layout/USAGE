@@ -1,8 +1,22 @@
 Description:
-    Explain the generator
+    The skeleton_layout generator creates a layout based on the Skeleton responsive design framwork created by Dave Gamache. (see http://getskeleton.com)
+    
+    The optional [NAME] attribute (defaults to 'application') will we used to name the layout file. 
 
 Example:
-    rails generate skeleton_layout Thing
+    rails generate skeleton_layout [NAME]
 
     This will create:
-        what/will/it/create
+      
+      app/views/layout/application.html.erb
+      app/assets/stylesheets/base.css
+      app/assets/stylesheets/layout.css
+      app/assets/stylesheets/skeleton.css
+      app/assets/javascripts/tabs.js
+      public/404.html
+      public/robots.txt
+      public/favicon.ico
+      public/images/apple-touch-icon-114x114.png
+      public/images/apple-touch-icon-72x72.png
+      public/images/apple-touch-icon.png
+

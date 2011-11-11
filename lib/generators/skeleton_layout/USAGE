@@ -1,14 +1,14 @@
 Description:
     The skeleton_layout generator creates a layout based on the Skeleton responsive design framwork created by Dave Gamache. (see http://getskeleton.com)
     
-    The optional [NAME] attribute (defaults to 'application') will we used to name the layout file. 
+    The optional [NAME] attribute (defaults to 'application') will we used to name the layout file. By default, the layout with be ERB, but if the --haml option is specified, a haml template is created.
 
 Example:
-    rails generate skeleton_layout [NAME]
+    rails generate skeleton_layout [NAME] [--haml]
 
     This will create:
       
-      app/views/layout/application.html.erb
+      app/views/layout/application.html.[erb|haml]
       app/assets/stylesheets/base.css
       app/assets/stylesheets/layout.css
       app/assets/stylesheets/skeleton.css

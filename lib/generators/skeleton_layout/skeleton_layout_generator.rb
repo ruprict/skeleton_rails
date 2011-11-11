@@ -1,16 +1,22 @@
 class SkeletonLayoutGenerator < Rails::Generators::Base
   source_root File.expand_path('../templates', __FILE__)
   argument :layout_name, :type => :string, :default => 'application'
+  class_option :haml, :desc => "Generate HAML for layout view", :type => :boolean
 
   # TODO: Option for haml?
-  
+ 
+  # Copies the Skeleton files to their respecitve locations 
   def create_layout
     style_path = 'public'
     if (Rails.version =~ /^3\.1/) != nil
       # For Rails 3.1 and its assets pipeline we don't want to overwrite application.css
       style_path = 'app/assets'
     end
-    template "index.html.erb", "app/views/layouts/#{file_name}.html.erb"
+    if options.haml?
+      template "index.html.haml", "app/views/layouts/#{file_name}.html.haml"
+    else
+      template "index.html.erb", "app/views/layouts/#{file_name}.html.erb"
+    end
     copy_file '404.html', 'public/404.html'
     copy_file 'robots.txt', 'public/robots.txt'
     # Do these need to go in vendor/assets?

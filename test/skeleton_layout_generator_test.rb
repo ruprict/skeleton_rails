@@ -35,5 +35,11 @@ class SkeletonLayoutGeneratorTest < Rails::Generators::TestCase
     assert_file "public/stylesheets/layout.css"
     assert_file "public/stylesheets/skeleton.css"
   end
+
+  def test_standard_assets_with_haml
+    run_generator %w{--haml}
+    assert_file "app/views/layouts/application.html.haml"
+
+  end
   
 end

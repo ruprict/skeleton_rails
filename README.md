@@ -20,6 +20,11 @@ If the `--haml` option is specified, a haml template will be created instead of 
 # Future
 * Maybe add sass?
 
+# Issues/Suggestions
+If you find anything amiss with this gem, please feel free to add a [ github issue ](https://github.com/ruprict/skeleton_rails/issues). 
+
+If you have a suggestion, please feel free to fork, make the change, and submit a pull request.
+
 # Credit
 Thanks to Dave Gamache for making Skeleton, and thanks to Ryan Bates for making Nifty Generators, which I basically just copied to make the structure for this gem.
 

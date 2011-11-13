@@ -1,6 +1,7 @@
 require 'test/unit'
 require 'rails'
 require 'rails/generators'
+require 'mocha'
 
 require 'bundler'
 Bundler.setup

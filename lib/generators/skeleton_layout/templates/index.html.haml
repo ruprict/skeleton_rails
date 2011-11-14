@@ -20,8 +20,17 @@
   %link{:href => "images/apple-touch-icon.png", :rel => "apple-touch-icon"}
   %link{:href => "images/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
   %link{:href => "images/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
+
+  <% if ((Rails.version =~ /^3\.0/) != nil) %>
+  <!-- CSS
+  ================================================== -->
+  = stylesheet_link_tag :all 
+  = javascript_include_tag :defaults
+  <% else %>
   = stylesheet_link_tag "<%= file_name %>" 
   = javascript_include_tag "<%= file_name %>" 
+  <% end %>
+
   = csrf_meta_tag
 %body
   / Primary Page Layout
@@ -54,8 +63,9 @@
       %h3 Docs &amp; Support
       %p The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.
 
+  <% if ((Rails.version =~ /^3\.0/) != nil) %>
   / JS
   / ==================================================
-  %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
   %script{ :src => "javascripts/tabs.js"}
+  <% end %>
 

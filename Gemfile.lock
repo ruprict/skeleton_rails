@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    skeleton_rails (0.1.1)
+    skeleton_rails (0.1.2)
 
 GEM
   remote: http://rubygems.org/

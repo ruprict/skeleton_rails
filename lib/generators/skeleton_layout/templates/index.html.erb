@@ -19,12 +19,14 @@
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+         <% if ((Rails.version =~ /^3\.0/) != nil) %>
 
+          <!-- CSS
+    ================================================== -->
+          <link rel="stylesheet" href="stylesheets/base.css">
+          <link rel="stylesheet" href="stylesheets/skeleton.css">
+          <link rel="stylesheet" href="stylesheets/layout.css">
+        <% end %>
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -75,11 +77,13 @@
 	</div><!-- container -->
 
 
+       <% if ((Rails.version =~ /^3\.0/) != nil) %>
 
 	<!-- JS
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script src="javascripts/tabs.js"></script>
+        <script src="javascripts/tabs.js"></script>
+      <% end %>
 
 <!-- End Document
 ================================================== -->

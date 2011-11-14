@@ -17,6 +17,9 @@ Then, to create the layout:
 
 If the `--haml` option is specified, a haml template will be created instead of ERB.
 
+== Notes/Gotchas
+* If you are running Rails 3.0 and NOT using jQuery, tabs.js will throw an error. Just remove it or refactor it to use your js framework.
+
 == Future
 * Maybe add sass?
 

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "skeleton_rails"
-  s.version     = "0.1.3"
+  s.version     = "0.1.4"
   s.author      = "Glenn Goodrich"
   s.email       = "glenn.goodrich@gmail.com"
   s.homepage    = "http://github.com/ruprict/skeleton_rails"

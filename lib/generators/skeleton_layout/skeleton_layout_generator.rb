@@ -21,10 +21,10 @@ class SkeletonLayoutGenerator < Rails::Generators::Base
   end
 
   def determine_style_path
-    @style_path = 'public'
-    if (Rails.version =~ /^3\.1/) != nil
+    @style_path = 'app/assets'
+    if (Rails.version =~ /^3\.0/) != nil
       # For Rails 3.1 and its assets pipeline we don't want to overwrite application.css
-      @style_path = 'app/assets'
+      @style_path = 'public'
     end
     
   end
